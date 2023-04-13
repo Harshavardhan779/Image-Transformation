@@ -39,9 +39,10 @@ Step 8:
 Display all the Transformed images.
 
 ## Program:
-```python
+
 ### Developed By:Harshavardhan
 ### Register Number:212222240114
+```python
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -126,9 +127,9 @@ cropped_img=input_img[20:150,60:230]
 plt.axis('off')
 plt.imshow(cropped_img)
 plt.show()
-
-
 ```
+
+
 ## Output:
 ### i)Image Translation
 
