@@ -60,9 +60,10 @@ translated_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(translated_img)
 plt.show()
+```
 
 ii) Image Scaling
-
+```python
 M=np.float32([[1.5,0,0],
              [0,2,0],
              [0,0,1]])
@@ -70,9 +71,9 @@ scaled_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(scaled_img)
 plt.show()
-
+```
 iii)Image shearing
-
+```python
 M_x=np.float32([[1,0.2,0],
                [0,1,0],
                [0,0,1]])
@@ -87,10 +88,10 @@ plt.show()
 plt.axis('off')
 plt.imshow(sheared_img_yaxis)
 plt.show()
-
+```
 
 iv)Image Reflection
-
+```python
 M_x=np.float32([[1,0,0],
                [0,-1,rows],
                [0,0,1]])
@@ -105,7 +106,7 @@ plt.show()
 plt.axis('off')
 plt.imshow(reflected_img_yaxis)
 plt.show()
-
+```
 
 
 v)Image Rotation
@@ -122,7 +123,7 @@ plt.show()
 
 
 vi)Image Cropping
-
+```python
 cropped_img=input_img[20:150,60:230]
 plt.axis('off')
 plt.imshow(cropped_img)
